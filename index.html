@@ -2,39 +2,39 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planet0ne</title>
-    <link rel="stylesheet" href="./lib/bootstrap.min.css" />
-    <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css" />
-    <link rel="text/css" href="./lib/helvetica-255/Helvetica.ttf" />
-    <link rel="stylesheet" href="./css/index.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planet0ne</title>
+  <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+  <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css" />
+  <link rel="text/css" href="./lib/helvetica-255/Helvetica.ttf" />
+  <link rel="stylesheet" href="./css/index.css" />
 </head>
 
 <body>
 
-    <!-- Navbar Start -->
-    <div class="fixed-top navbar-top-fixed">
-        <nav class="navbar navbar-dark bg-dark">
-            <button class="navbar-toggler hamburger-icon" id="sidebar-toggle" type="button" data-toggle="collapse"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="brand-name">
-                <i class="fa fa-diamond"></i> Planet0ne
-            </div>
-        </nav>
+  <!-- Navbar Start -->
+  <div class="fixed-top navbar-top-fixed">
+    <nav class="navbar">
+      <button class="navbar-toggler hamburger-icon" id="sidebar-toggle" type="button" data-toggle="collapse"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="brand-name">
+        <i class="fa fa-diamond"></i> Planet0ne
+      </div>
+    </nav>
+  </div>
+  <!-- Navbar End -->
+
+
+  <!-- Sidebar Start -->
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <i class="fa fa-diamond"></i> Planet0ne <i class="fa fa-times"></i>
     </div>
-    <!-- Navbar End -->
-
-
-    <!-- Sidebar Start -->
-    <div class="sidebar">
-        <div class="sidebar-header">
-            <i class="fa fa-diamond"></i> Planet0ne
-        </div>
-        <ul>
-            <!-- <li class="dropdown">
+    <ul>
+      <!-- <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown 1</a>
 
                 <div class="dropdown-menu">
@@ -51,33 +51,304 @@
                     <li><a href="#">Link 6</a></li>
                 </ul>
             </li> -->
-            <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
-            <li><a href="#photos"><i class="fa fa-photo"></i> Photos</a></li>
-            <li><a href="#videos"><i class="fa fa-video-camera"></i> Videos</a></li>
-            <li><a href="#aboutUs"><i class="fa fa-address-card-o"></i> About Us</a></li>
-            <li><a href="#shopping"><i class="fa fa-shopping-bag"></i> Shopping</a></li>
-            <li><a href="#explore"><i class="fa fa-wpexplorer"></i> Explore</a></li>
-            <li><a href="#settings"><i class="fa fa-cog"></i> Settings</a></li> 
-        </ul>
+      <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="#photos"><i class="fa fa-photo"></i> Photos</a></li>
+      <li><a href="#videos"><i class="fa fa-video-camera"></i> Videos</a></li>
+      <li><a href="#aboutUs"><i class="fa fa-address-card-o"></i> About Us</a></li>
+      <li><a href="#shopping"><i class="fa fa-shopping-bag"></i> Shopping</a></li>
+      <li><a href="#explore"><i class="fa fa-wpexplorer"></i> Explore</a></li>
+      <li><a href="#settings"><i class="fa fa-cog"></i> Settings</a></li>
+    </ul>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Sidebar End -->
+
+  <!-- Page content -->
+  <div class="main-page">
+
+
+
+
+
+    <!-- jumbotrone -->
+    <div class="jumbotron">
+      <div class="container carousel slide" id="carouselExampleCaptions" data-ride="carousel">
+        <div class="carousel row">
+          <div class="main-carousel col-lg-1 col-md-1 col-sm-1 col-1 main-carousel-left">
+            <i class="fa fa-angle-left " type="button" data-target="#carouselExampleCaptions"
+              data-slide="prev"> </i>
+          </div>
+          <div class="main-carousel col-lg-10 col-md-10 col-sm-10 col-10" id="main-carousel-item">
+            <!-- javascript func -->
+          </div>
+          <div class="main-carousel col-lg-1 col-md-1 col-sm-1 col-1 main-carousel-right">
+            <i class="fa fa-angle-right " type="button" data-target="#carouselExampleCaptions"
+              data-slide="next"> </i>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="overlay" id="overlay"></div>
+    <!-- testimonial -->
 
-    <!-- Sidebar End -->
+    <section class="testimonial">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 d-lg-block">
+            <ol class="carousel-indicators tabs">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                <figure>
+                  <img src="./assets/imgs/common/testimonials-01-179x179.png" class="img-fluid" alt="">
+                </figure>
+              </li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                <figure>
+                  <img src="./assets/imgs/common/testimonials-02-306x306.png" class="img-fluid" alt="">
+                </figure>
+              </li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2">
+                <figure>
+                  <img src="./assets/imgs/common/testimonials-03-179x179.png" class="img-fluid" alt="">
+                </figure>
+              </li>
+            </ol>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center align-items-center">
+            <div id="carouselExampleIndicators" data-interval="false" class="carousel slide" data-ride="carousel">
+              <h3>WHAT OUR CLIENTS SAY</h3>
+              <h1>TESTIMONIALS</h1>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="quote-wrapper">
+                    <p>1I have tried a lot of food delivery services but Plate is something out of this
+                      world! Their food is really healthy and it tastes great, which is why I
+                      recommend this company to all my friends!</p>
+                    <h3>peter lee</h3>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="quote-wrapper">
+                    <p>2I have tried a lot of food delivery services but Plate is something out of this
+                      world! Their food is really healthy and it tastes great, which is why I
+                      recommend this company to all my friends!</p>
+                    <h3>peter lee</h3>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="quote-wrapper">
+                    <p>3I have tried a lot of food delivery services but Plate is something out of this
+                      world! Their food is really healthy and it tastes great, which is why I
+                      recommend this company to all my friends!</p>
+                    <h3>peter lee</h3>
+                  </div>
+                </div>
+              </div>
+              <ol class="carousel-indicators indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Page content -->
-    <div class="container main-page">
-        <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </div>    
-    </div>
+    <section style="height: 10vh; background-color: #161b22;">
+      Hello
+    </section>
 
-    <!-- Footer Start -->
-<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+    <!-- <section class="plans-sec">
+        <div class="heading">
+          <h1>Our plans</h1>
+        </div>
+        <div class="card-carousel">
+          <div class="my-card"></div>
+          <div class="my-card"></div>
+          <div class="my-card"></div>
+        </div>
+      </section> -->
+
+    <!-- <section class="accordion">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+               <div class="bd-example" data-example-id=""> 
+                  <div id="accordion" role="tablist" aria-multiselectable="true">
+                      <div class="card">
+                          <div class="card-header" role="tab" id="headingOne">
+                              <div class="mb-0">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                      aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                                      <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                      <h3>Collapsible Group Item</h3>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                          tempor</p>
+                                  </a>
+                                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                              </div>
+                          </div>
+
+                          <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne"
+                              aria-expanded="false" style="">
+                              <div class="card-block">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                  richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                  brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                  cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                  Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                  you probably haven't heard of them accusamus labore sustainable VHS.
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header" role="tab" id="headingTwo">
+                              <div class="mb-0">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                                      aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                                      <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                      <h3>Collapsible Group Item</h3>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                          tempor</p>
+                                  </a>
+                                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                              </div>
+                          </div>
+                          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo"
+                              aria-expanded="false">
+                              <div class="card-block">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                  richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                  brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                  cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                  Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                  you probably haven't heard of them accusamus labore sustainable VHS.
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header" role="tab" id="headingThree">
+                              <div class="mb-0">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                                      aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                                      <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                      <h3>Collapsible Group Item</h3>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                          tempor</p>
+                                  </a>
+                                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                              </div>
+                          </div>
+                          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree"
+                              aria-expanded="false">
+                              <div class="card-block">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                  richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                  brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                  cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                  Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                  you probably haven't heard of them accusamus labore sustainable VHS.
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header" role="tab" id="headingOne">
+                              <div class="mb-0">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
+                                      aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                                      <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                      <h3>Collapsible Group Item</h3>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                          tempor</p>
+                                  </a>
+                                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                              </div>
+                          </div>
+
+                          <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingOne"
+                              aria-expanded="false" style="">
+                              <div class="card-block">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                  richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                  brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                  cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                  Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                  you probably haven't heard of them accusamus labore sustainable VHS.
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header" role="tab" id="headingTwo">
+                              <div class="mb-0">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"
+                                      aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                                      <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                      <h3>Collapsible Group Item</h3>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                          tempor</p>
+                                  </a>
+                                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                              </div>
+                          </div>
+                          <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingTwo"
+                              aria-expanded="false">
+                              <div class="card-block">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                  richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                  brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                  cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                  Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                  you probably haven't heard of them accusamus labore sustainable VHS.
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header" role="tab" id="headingThree">
+                              <div class="mb-0">
+                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix"
+                                      aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+                                      <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                      <h3>Collapsible Group Item</h3>
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                          tempor</p>
+                                  </a>
+                                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+                              </div>
+                          </div>
+                          <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingThree"
+                              aria-expanded="false">
+                              <div class="card-block">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                  richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                  brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                  cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                  Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                  you probably haven't heard of them accusamus labore sustainable VHS.
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+            
+          </div>
+      </div>
+      </section> -->
+  </div>
+
+  <!-- Footer Start -->
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted">
     <!-- Section: Social media -->
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
       <!-- Left -->
@@ -85,7 +356,7 @@
         <span>Get connected with us on social networks:</span>
       </div>
       <!-- Left -->
-  
+
       <!-- Right -->
       <div>
         <a href="" class="me-4 text-reset">
@@ -110,7 +381,7 @@
       <!-- Right -->
     </section>
     <!-- Section: Social media -->
-  
+
     <!-- Section: Links  -->
     <section class="">
       <div class="container text-center text-md-start mt-5">
@@ -128,7 +399,7 @@
             </p>
           </div>
           <!-- Grid column -->
-  
+
           <!-- Grid column -->
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
@@ -149,7 +420,7 @@
             </p>
           </div>
           <!-- Grid column -->
-  
+
           <!-- Grid column -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
@@ -170,7 +441,7 @@
             </p>
           </div>
           <!-- Grid column -->
-  
+
           <!-- Grid column -->
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
@@ -187,7 +458,7 @@
       </div>
     </section>
     <!-- Section: Links  -->
-  
+
     <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2024 Copyright:
@@ -197,10 +468,36 @@
   </footer>
   <!-- Footer End-->
 
-    <script src="./lib/jquery.slim.min.js"></script>
-    <script src="./lib/bootstrap.bundle.min.js"></script>
-    <script src="./lib/jquery-3.7.1.min.js"></script>
-    <script src="./js/script.min.js"></script>
+  <!-- modal start -->
+
+  <!-- Button trigger modal -->
+  <button type="button" id="modalShowBtn" data-toggle="modal" data-target="#allPurposeModal">
+    Launch demo modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="allPurposeModal" tabindex="-1" aria-labelledby="allPurposeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="allPurposeModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="modalBody">
+          <!-- javascript function -->
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- modal End -->
+  <script src="./lib/jquery.slim.min.js"></script>
+  <script src="./lib/bootstrap.bundle.min.js"></script>
+  <script src="./lib/jquery-3.7.1.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
