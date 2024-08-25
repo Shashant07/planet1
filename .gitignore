@@ -1,4 +1,10 @@
+# lib
 node_modules/
+
+# files
 js/script.js
-demo.html
 css/index.min.css
+
+# Content
+Content.pptx
+~$Content.pptx

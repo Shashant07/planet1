@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./lib/bootstrap.min.css" />
   <link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css" />
   <link rel="text/css" href="./lib/helvetica-255/Helvetica.ttf" />
-  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/index.min.css" />
 </head>
 
 <body>
@@ -51,29 +51,23 @@
                     <li><a href="#">Link 6</a></li>
                 </ul>
             </li> -->
-      <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
-      <li><a href="#photos"><i class="fa fa-photo"></i> Photos</a></li>
-      <li><a href="#videos"><i class="fa fa-video-camera"></i> Videos</a></li>
-      <li><a href="#aboutUs"><i class="fa fa-address-card-o"></i> About Us</a></li>
-      <li><a href="#shopping"><i class="fa fa-shopping-bag"></i> Shopping</a></li>
-      <li><a href="#explore"><i class="fa fa-wpexplorer"></i> Explore</a></li>
-      <li><a href="#settings"><i class="fa fa-cog"></i> Settings</a></li>
+      <li><a href="#" id="homeSideId"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="#photos" id="photosSideId"><i class="fa fa-photo"></i> Photos</a></li>
+      <li><a href="#videos" id="videosSideId"><i class="fa fa-video-camera"></i> Videos</a></li>
+      <li><a href="#aboutUs" id="aboutUsSideId"><i class="fa fa-address-card-o"></i> About Us</a></li>
+      <li><a href="#shopping" id="shoppingSideId"><i class="fa fa-shopping-bag"></i> Shopping</a></li>
+      <li><a href="#explore" id="exploreSideId"><i class="fa fa-wpexplorer"></i> Explore</a></li>
+      <li><a href="#settings" id="settingsSideId"><i class="fa fa-cog"></i> Settings</a></li>
     </ul>
   </div>
-
   <div class="overlay" id="overlay"></div>
-
   <!-- Sidebar End -->
 
-  <!-- Page content -->
+
+  <!-- Main Page Content Start -->
   <div class="main-page">
-
-
-
-
-
     <!-- jumbotrone -->
-    <div class="jumbotron">
+    <div class="main-page-jumbotron">
       <div class="container carousel slide" id="carouselExampleCaptions" data-ride="carousel">
         <div class="carousel row">
           <div class="main-carousel col-lg-1 col-md-1 col-sm-1 col-1 main-carousel-left">
@@ -92,7 +86,6 @@
     </div>
 
     <!-- testimonial -->
-
     <section class="testimonial">
       <div class="container">
         <div class="row">
@@ -156,196 +149,113 @@
       </div>
     </section>
 
-    <section style="height: 10vh; background-color: #161b22;">
-      Hello
+    <!-- Plans -->
+    <section id="plans">
+      <h1>Choose the plan that fits for your team</h1>
+      <p>
+        Deploy your sites to global infrastructure in seconds. No credit card
+        required
+      </p>
+
+      <div class="pricing">
+        <div class="plan">
+          <h2>Dev</h2>
+          <div class="price">FREE</div>
+          <ul class="features">
+            <li><i class="fa fa-check-circle"></i> Unlimited Websites</li>
+            <li><i class="fa fa-check-circle"></i> 1 User</li>
+            <li><i class="fa fa-check-circle"></i> 100MB Space/website</li>
+            <li><i class="fa fa-check-circle"></i> Continuous deployment</li>
+            <li><i class="fa fa-times-circle"></i> No priority support</li>
+          </ul>
+          <button>Signup</button>
+        </div>
+        <div class="plan popular">
+          <span>Most Popular</span>
+          <h2>Pro</h2>
+          <div class="price">$10/month</div>
+          <ul class="features">
+            <li><i class="fa fa-check-circle"></i> Unlimited Websites</li>
+            <li><i class="fa fa-check-circle"></i> 5 Users</li>
+            <li><i class="fa fa-check-circle"></i> 512MB Space/website</li>
+            <li><i class="fa fa-check-circle"></i> Continuous deployment</li>
+            <li><i class="fa fa-check-circle"></i> Email Support</li>
+          </ul>
+          <button>Buy Now</button>
+        </div>
+        <div class="plan">
+          <h2>Enterprise</h2>
+          <div class="price">Custom Pricing</div>
+          <ul class="features">
+            <li><i class="fa fa-check-circle"></i> Unlimited Websites</li>
+            <li><i class="fa fa-check-circle"></i> Unlimited Users</li>
+            <li><i class="fa fa-check-circle"></i> Unlimited Space/website</li>
+            <li><i class="fa fa-check-circle"></i> Continuous deployment</li>
+            <li><i class="fa fa-check-circle"></i> 24/7 Email support</li>
+          </ul>
+          <button>Contact Us</button>
+        </div>
+      </div>
     </section>
 
-    <!-- <section class="plans-sec">
-        <div class="heading">
-          <h1>Our plans</h1>
-        </div>
-        <div class="card-carousel">
-          <div class="my-card"></div>
-          <div class="my-card"></div>
-          <div class="my-card"></div>
-        </div>
-      </section> -->
-
-    <!-- <section class="accordion">
-        <div class="row">
-          <div class="col-md-8 offset-md-2">
-               <div class="bd-example" data-example-id=""> 
-                  <div id="accordion" role="tablist" aria-multiselectable="true">
-                      <div class="card">
-                          <div class="card-header" role="tab" id="headingOne">
-                              <div class="mb-0">
-                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                                      aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                                      <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                                      <h3>Collapsible Group Item</h3>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                          tempor</p>
-                                  </a>
-                                  <i class="fa fa-angle-right" aria-hidden="true"></i>
-                              </div>
-                          </div>
-
-                          <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne"
-                              aria-expanded="false" style="">
-                              <div class="card-block">
-                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                  richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                  brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                  cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                  Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                                  you probably haven't heard of them accusamus labore sustainable VHS.
-                              </div>
-                          </div>
-                      </div>
-                      <div class="card">
-                          <div class="card-header" role="tab" id="headingTwo">
-                              <div class="mb-0">
-                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
-                                      aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                                      <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                                      <h3>Collapsible Group Item</h3>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                          tempor</p>
-                                  </a>
-                                  <i class="fa fa-angle-right" aria-hidden="true"></i>
-                              </div>
-                          </div>
-                          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo"
-                              aria-expanded="false">
-                              <div class="card-block">
-                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                  richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                  brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                  cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                  Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                                  you probably haven't heard of them accusamus labore sustainable VHS.
-                              </div>
-                          </div>
-                      </div>
-                      <div class="card">
-                          <div class="card-header" role="tab" id="headingThree">
-                              <div class="mb-0">
-                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
-                                      aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                                      <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                                      <h3>Collapsible Group Item</h3>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                          tempor</p>
-                                  </a>
-                                  <i class="fa fa-angle-right" aria-hidden="true"></i>
-                              </div>
-                          </div>
-                          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree"
-                              aria-expanded="false">
-                              <div class="card-block">
-                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                  richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                  brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                  cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                  Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                                  you probably haven't heard of them accusamus labore sustainable VHS.
-                              </div>
-                          </div>
-                      </div>
-                      <div class="card">
-                          <div class="card-header" role="tab" id="headingOne">
-                              <div class="mb-0">
-                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
-                                      aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                                      <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                                      <h3>Collapsible Group Item</h3>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                          tempor</p>
-                                  </a>
-                                  <i class="fa fa-angle-right" aria-hidden="true"></i>
-                              </div>
-                          </div>
-
-                          <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingOne"
-                              aria-expanded="false" style="">
-                              <div class="card-block">
-                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                  richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                  brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                  cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                  Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                                  you probably haven't heard of them accusamus labore sustainable VHS.
-                              </div>
-                          </div>
-                      </div>
-                      <div class="card">
-                          <div class="card-header" role="tab" id="headingTwo">
-                              <div class="mb-0">
-                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"
-                                      aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                                      <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                                      <h3>Collapsible Group Item</h3>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                          tempor</p>
-                                  </a>
-                                  <i class="fa fa-angle-right" aria-hidden="true"></i>
-                              </div>
-                          </div>
-                          <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingTwo"
-                              aria-expanded="false">
-                              <div class="card-block">
-                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                  richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                  brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                  cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                  Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                                  you probably haven't heard of them accusamus labore sustainable VHS.
-                              </div>
-                          </div>
-                      </div>
-                      <div class="card">
-                          <div class="card-header" role="tab" id="headingThree">
-                              <div class="mb-0">
-                                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix"
-                                      aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                                      <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                                      <h3>Collapsible Group Item</h3>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                          tempor</p>
-                                  </a>
-                                  <i class="fa fa-angle-right" aria-hidden="true"></i>
-                              </div>
-                          </div>
-                          <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingThree"
-                              aria-expanded="false">
-                              <div class="card-block">
-                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                  richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                  brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                  sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                  shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                  cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                  Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                                  you probably haven't heard of them accusamus labore sustainable VHS.
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-            
-          </div>
-      </div>
-      </section> -->
   </div>
+  <!-- Main Page Content End -->
+
+
+  <!-- About Us Page Start -->
+  <div class="about-us-page">
+    <div class="about-us-jumbotrone">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <h2>About Us</h2>
+            <p>Planet0ne was born out of a passion for helping businesses grow and succeed in the digital age. We are more than just a web development team—we are your partners in creating a thriving online presence. Our mission is to empower entrepreneurs and business owners by providing innovative, tailor-made digital solutions that bring their visions to life.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="our-vision-mission">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="margin: auto; display: block;">
+            <h2>Our Vision & Mission</h2>
+            <!-- <p>Our vision is to be the leading digital solutions provider in the industry, empowering businesses
+              to grow and succeed in the digital age. Our mission is to provide innovative, tailor-made digital
+              solutions that bring our clients' visions to life.</p> -->
+            <p>To be the go-to partner for businesses seeking to establish a powerful and sustainable online presence.</p>
+            <p>Our mission is to deliver exceptional digital solutions that reflect the unique identity and goals of each client, ensuring their business not only survives but thrives in a competitive market.</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <img src="./assets/imgs/common/trust.png" alt="Our Vision" width="100%">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <h2>Why Planet0ne?</h2>
+            <p>Choosing Planet0ne means choosing a partner who is invested in your success. We take the time to understand your business, your goals, and your challenges. With our expert team by your side, you’ll have the support you need to navigate the digital landscape and achieve sustainable growth.</p>
+            <ul>
+              <li>Tailored Solutions for Every Business</li>
+              <li>Transparent and Collaborative Approach</li>
+              <li>Cutting-Edge Technologies and Trends</li>
+              <li>Proven Track Record of Success</li>
+            </ul>
+          </div>
+          <!-- <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+            <img src="./assets/imgs/common/trust.png" alt="why us" width="100%"/>
+          </div> -->
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- About Us Page End -->
+
+
 
   <!-- Footer Start -->
   <footer class="text-center text-lg-start bg-body-tertiary text-muted">
@@ -359,22 +269,22 @@
 
       <!-- Right -->
       <div>
-        <a href="" class="me-4 text-reset">
+        <a href="" class="me-4 text-reset social-icons" title="Facebook">
           <i class="fa fa-facebook"></i>
         </a>
-        <a href="" class="me-4 text-reset">
+        <a href="" class="me-4 text-reset social-icons" title="Instagram">
           <i class="fa fa-instagram"></i>
         </a>
-        <a href="" class="me-4 text-reset">
+        <a href="" class="me-4 text-reset social-icons" title="Mail">
           <i class="fa fa-envelope-o"></i>
         </a>
-        <a href="" class="me-4 text-reset">
+        <a href="" class="me-4 text-reset social-icons" title="Linkedin">
           <i class="fa fa-linkedin"></i>
         </a>
-        <a href="" class="me-4 text-reset">
+        <a href="" class="me-4 text-reset social-icons" title="GitHub">
           <i class="fa fa-github"></i>
         </a>
-        <a href="" class="me-4 text-reset">
+        <a href="" class="me-4 text-reset social-icons" title="Google">
           <i class="fa fa-google"></i>
         </a>
       </div>
@@ -446,11 +356,11 @@
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-            <p><i class="fa fa-home"></i> Nagpur, Maharashtra, India</p>
-            <p>
-              <i class="fa fa-envelope"></i> planet1@outlook.com
+            <p  title="Address"><i class="fa fa-home"></i> Nagpur, Maharashtra, India</p>
+            <p title="Mail">
+              <i class="fa fa-envelope" ></i> planet1@outlook.com
             </p>
-            <p><i class="fa fa-phone"></i> + 91 9637744229</p>
+            <p  title="Contact Number"><i class="fa fa-phone"></i> + 91 9637744229</p>
           </div>
           <!-- Grid column -->
         </div>
@@ -469,12 +379,10 @@
   <!-- Footer End-->
 
   <!-- modal start -->
-
   <!-- Button trigger modal -->
   <button type="button" id="modalShowBtn" data-toggle="modal" data-target="#allPurposeModal">
     Launch demo modal
   </button>
-
   <!-- Modal -->
   <div class="modal fade" id="allPurposeModal" tabindex="-1" aria-labelledby="allPurposeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
@@ -492,8 +400,9 @@
       </div>
     </div>
   </div>
-
   <!-- modal End -->
+
+  <!-- Other Links -->
   <script src="./lib/jquery.slim.min.js"></script>
   <script src="./lib/bootstrap.bundle.min.js"></script>
   <script src="./lib/jquery-3.7.1.min.js"></script>
