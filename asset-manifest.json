@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/planet1/static/css/main.d7edbbb1.css",
+    "main.js": "/planet1/static/js/main.e5451eb0.js",
+    "static/js/453.9afeec6a.chunk.js": "/planet1/static/js/453.9afeec6a.chunk.js",
+    "static/media/Poppins-Light.ttf": "/planet1/static/media/Poppins-Light.3fda0a0ef72be930b308.ttf",
+    "static/media/Poppins-Medium.ttf": "/planet1/static/media/Poppins-Medium.2d6ae121d10e7b9c28b4.ttf",
+    "static/media/Poppins-Bold.ttf": "/planet1/static/media/Poppins-Bold.9f0cd50bfdf6533c6cd2.ttf",
+    "static/media/carousel-1.jpg": "/planet1/static/media/carousel-1.0c731fe6459d52f225d3.jpg",
+    "static/media/p1-logo.png": "/planet1/static/media/p1-logo.8a261357771f368154a1.png",
+    "index.html": "/planet1/index.html",
+    "main.d7edbbb1.css.map": "/planet1/static/css/main.d7edbbb1.css.map",
+    "main.e5451eb0.js.map": "/planet1/static/js/main.e5451eb0.js.map",
+    "453.9afeec6a.chunk.js.map": "/planet1/static/js/453.9afeec6a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7edbbb1.css",
+    "static/js/main.e5451eb0.js"
+  ]
+}
