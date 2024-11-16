@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+
+import logop1 from "../../assets/web/p1-logo.png";
 const Footer = () => {
   return (
     <>
@@ -7,9 +9,12 @@ const Footer = () => {
         <div className="container">
             <div className="row gx-5">
                 <div className="col-lg-4 col-md-6 footer-about">
-                    <div className="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
-                        <Link to="index.html" className="navbar-brand">
-                            <h1 className="m-0 text-white"><i className="fa fa-user-tie me-2"></i>Startup</h1>
+                    <div className="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-dark p-4" style={{border: '2px solid cyan'}}>
+                        {/* <Link to="index.html" className="navbar-brand">
+                            <h1 className="m-0 text-white"><i className="fa fa-user-tie me-2"></i>Planet1</h1>
+                        </Link> */}
+                        <Link to={'/'} className="navbar-brand p-0">
+                            <h1 className="m-0 underline text-white"> <img src={logop1} alt='logo' width={"50px"} />lanet1</h1>
                         </Link>
                         <p className="mt-3 mb-4">Lorem diam sit erat dolor elitr et, diam lorem justo amet clita stet eos sit. Elitr dolor duo lorem, elitr clita ipsum sea. Diam amet erat lorem stet eos. Diam amet et kasd eos duo.</p>
                         <form action="">
@@ -28,21 +33,21 @@ const Footer = () => {
                             </div>
                             <div className="d-flex mb-2">
                                 <i className="bi bi-geo-alt text-primary me-2"></i>
-                                <p className="mb-0">123 Street, New York, USA</p>
+                                <p className="mb-0">T-Point, Manish Nagar, Nagpur</p>
                             </div>
                             <div className="d-flex mb-2">
                                 <i className="bi bi-envelope-open text-primary me-2"></i>
-                                <p className="mb-0">info@example.com</p>
+                                <p className="mb-0">planet1@outlook.com</p>
                             </div>
                             <div className="d-flex mb-2">
                                 <i className="bi bi-telephone text-primary me-2"></i>
-                                <p className="mb-0">+012 345 67890</p>
+                                <p className="mb-0">+91 9637744229</p>
                             </div>
                             <div className="d-flex mt-4">
-                                <Link className="btn btn-primary btn-square me-2" to="#"><i className="fab fa-twitter fw-normal"></i></Link>
-                                <Link className="btn btn-primary btn-square me-2" to="#"><i className="fab fa-facebook-f fw-normal"></i></Link>
-                                <Link className="btn btn-primary btn-square me-2" to="#"><i className="fab fa-linkedin-in fw-normal"></i></Link>
-                                <Link className="btn btn-primary btn-square" to="#"><i className="fab fa-instagram fw-normal"></i></Link>
+                                <Link className="btn btn-primary btn-square me-2" to="https://api.whatsapp.com/send?phone=9637744229"><i className="fab fa-whatsapp fw-normal"></i></Link>
+                                <Link className="btn btn-primary btn-square me-2" to="https://www.instagram.com/planet1/"><i className="fab fa-instagram fw-normal"></i></Link>
+                                <Link className="btn btn-primary btn-square me-2" to=""><i className="fab fa-linkedin-in fw-normal"></i></Link>
+                                <Link className="btn btn-primary btn-square" to="https://www.facebook.com/planet1"><i className="fab fa-facebook fw-normal"></i></Link>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
@@ -81,10 +86,10 @@ const Footer = () => {
             <div className="row justify-content-end">
                 <div className="col-lg-8 col-md-6">
                     <div className="d-flex align-items-center justify-content-center" style={{height: "75px"}}>
-                        <p className="mb-0">&copy; <Link className="text-white border-bottom" to="#">Your Site Name</Link>. All Rights Reserved. 
+                        <p className="mb-0">&copy; <Link className="text-white border-bottom" to="#"><strong>Planet1</strong></Link>. All Rights Reserved. 
 						
-						Designed by <Link className="text-white border-bottom" to="https://htmlcodex.com">HTML Codex</Link></p>
-                        <br />Distributed By: <Link className="border-bottom" to="https://themewagon.com" target="_blank">ThemeWagon</Link>
+						Designed by <strong>Planet1</strong> Team.</p>
+                        {/* <br />Distributed By: <Link className="border-bottom" to="https://themewagon.com" target="_blank">ThemeWagon</Link> */}
                     </div>
                 </div>
             </div>

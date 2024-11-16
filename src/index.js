@@ -11,7 +11,7 @@ import "./utils/lib/owlcarousel/assets/owl.carousel.min.css";
 import "./utils/lib/animate/animate.css"
 
 // <!-- Customized Bootstrap Stylesheet -->
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './utils/bootstrap/bootstrap.min.css';
 
 import './index.css';
 

@@ -20,6 +20,10 @@ const NavbarComp = () => {
         const position = window.pageYOffset;
         setScrolling(position);
     }
+
+    const handleSearch = () => {
+        alert("Search functionality is under developemnt, we will update this soon!")
+    }
     useEffect(() => {
         window.addEventListener('scroll', handleScroll, { passive: true });
 
@@ -40,7 +44,7 @@ const NavbarComp = () => {
                 </Link>
 
                 <div className="navbar-nav ms-auto py-0" style={{ flexDirection: "row" }}>
-                    <Link to={'/search'} type="button" className="nav-item nav-link btn" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <Link to={'/search'} type="button" className="nav-item nav-link btn" data-bs-toggle="modal" data-bs-target="#searchModal" onClick={handleSearch}>
                         <i className="fa fa-search"></i>
                     </Link>
                     <Link to={'/'} className="nav-item nav-link"><i className="fa fa-user-tie" style={{ fontSize: "xx-large" }} ></i></Link>

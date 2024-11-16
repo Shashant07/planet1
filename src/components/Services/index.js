@@ -72,9 +72,10 @@ const Services = () => {
                 </div>
                 <div className="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
                     <div className="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
-                        <h3 className="text-white mb-3">Call Us For Quote</h3>
-                        <p className="text-white mb-3">Clita ipsum magna kasd rebum at ipsum amet dolor justo dolor est magna stet eirmod</p>
-                        <h2 className="text-white mb-0">+012 345 6789</h2>
+                        <h3 className="text-white mb-3">Connect with us for Queries</h3>
+                        <p className="text-white mb-3">We are happy to help you and grow your business to next level</p>
+                        <h5 className="text-white mb-3"><i className='bi bi-envelope-open'></i> planet1@outlook</h5>
+                        <h5 className="text-white mb-0"><i className='bi bi-telephone'></i> +91 9637744229</h5>
                     </div>
                 </div>
             </div>

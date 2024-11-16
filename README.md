@@ -102,3 +102,6 @@ git commit -m "commit"
 git push
 
 npm run deploy
+
+
+  "homepage": "https://shashant07.github.io/planet1",

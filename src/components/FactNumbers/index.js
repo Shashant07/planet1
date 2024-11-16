@@ -13,7 +13,7 @@ const FactNumbers = () => {
                                 </div>
                                 <div className="ps-4">
                                     <h5 className="text-white mb-0">Happy Clients</h5>
-                                    <h1 className="text-white mb-0" data-toggle="counter-up">12345</h1>
+                                    <h1 className="text-white mb-0" data-toggle="counter-up">...</h1>
                                 </div>
                             </div>
                         </div>
@@ -24,7 +24,7 @@ const FactNumbers = () => {
                                 </div>
                                 <div className="ps-4">
                                     <h5 className="text-primary mb-0">Projects Done</h5>
-                                    <h1 className="mb-0" data-toggle="counter-up">12345</h1>
+                                    <h1 className="mb-0" data-toggle="counter-up">...</h1>
                                 </div>
                             </div>
                         </div>
@@ -35,7 +35,7 @@ const FactNumbers = () => {
                                 </div>
                                 <div className="ps-4">
                                     <h5 className="text-white mb-0">Win Awards</h5>
-                                    <h1 className="text-white mb-0" data-toggle="counter-up">12345</h1>
+                                    <h1 className="text-white mb-0" data-toggle="counter-up">...</h1>
                                 </div>
                             </div>
                         </div>

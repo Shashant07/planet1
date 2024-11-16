@@ -1,16 +1,16 @@
 /* Fonts addition */
 @font-face {
-  font-family: poppins-light;
+  font-family: poppins-light!important;
   src: url(/public/fonts/poppins/Poppins-Light.ttf);
 }
 
 @font-face {
-  font-family: poppins-regular;
+  font-family: poppins-regular!important;
   src: url(/public/fonts/poppins/Poppins-Medium.ttf);
 }
 
 @font-face {
-  font-family: poppins-bold;
+  font-family: poppins-bold!important;
   src: url(/public/fonts/poppins/Poppins-Bold.ttf);
 }
  

@@ -9,88 +9,18 @@ const HeaderCarousel = () => {
         {
             "id": "0",
             "bg-img": "carousel-1.jpg",
-            "h5Heading": "Creative & Innovative",
-            "h1Heading": "Creative & Innovative Digital Solution",
-            "btn1": "Free Quote",
+            "h5Heading": "Your Business, Our Design, Everyone’s Orbit",
+            "h1Heading": "Welcome to Planet1",
+            "btn1": "",
             "btn2": "Contact us",
-            "btn1-link": "/home",
-            "btn2-link": "/pages"
+            "btn1-link": "",
+            "btn2-link": "/contact"
         },
         {
             "id": "1",
             "bg-img": "carousel-2.jpg",
-            "h5Heading": "Heading 5-2",
-            "h1Heading": "Heading 1-2",
-            "btn1": "Btn1-2",
-            "btn2": "Btn2-2",
-            "btn1-link": "/home",
-            "btn2-link": "/pages"
-        },
-        {
-            "id": "2",
-            "bg-img": "carousel-2.jpg",
-            "h5Heading": "Heading 5-3",
-            "h1Heading": "Heading 1-2",
-            "btn1": "Btn1-2",
-            "btn2": "Btn2-2",
-            "btn1-link": "/home",
-            "btn2-link": "/pages"
-        },
-        {
-            "id": "3",
-            "bg-img": "carousel-2.jpg",
-            "h5Heading": "Heading 5-4",
-            "h1Heading": "Heading 1-2",
-            "btn1": "Btn1-2",
-            "btn2": "Btn2-2",
-            "btn1-link": "/home",
-            "btn2-link": "/pages"
-        },
-        {
-            "id": "4",
-            "bg-img": "carousel-2.jpg",
-            "h5Heading": "Heading 5-5",
-            "h1Heading": "Heading 1-2",
-            "btn1": "Btn1-2",
-            "btn2": "Btn2-2",
-            "btn1-link": "/home",
-            "btn2-link": "/pages"
-        },
-        {
-            "id": "5",
-            "bg-img": "carousel-2.jpg",
-            "h5Heading": "Heading 5-6",
-            "h1Heading": "Heading 1-2",
-            "btn1": "Btn1-2",
-            "btn2": "Btn2-2",
-            "btn1-link": "/home",
-            "btn2-link": "/pages"
-        },
-        {
-            "id": "6",
-            "bg-img": "carousel-2.jpg",
-            "h5Heading": "Heading 5-7",
-            "h1Heading": "Heading 1-2",
-            "btn1": "Btn1-2",
-            "btn2": "Btn2-2",
-            "btn1-link": "/home",
-            "btn2-link": "/pages"
-        },
-        {
-            "id": "7",
-            "bg-img": "carousel-2.jpg",
-            "h5Heading": "Heading 5-8",
-            "h1Heading": "Heading 1-2",
-            "btn1": "Btn1-2",
-            "btn2": "Btn2-2",
-            "btn1-link": "/home",
-            "btn2-link": "/pages"
-        },
-        {
-            "id": "8",
-            "bg-img": "carousel-2.jpg",
-            "h5Heading": "Heading 5-9",
-            "h1Heading": "Heading 1-2",
+            "h5Heading": "Stand Out with Our Expertise",
+            "h1Heading": "Core Offerings",
             "btn1": "Btn1-2",
             "btn2": "Btn2-2",
             "btn1-link": "/home",
@@ -121,14 +51,14 @@ const HeaderCarousel = () => {
                 <div className="carousel-inner">
                     {carousels.map(
                         (carousel)=>
-                            <div className={(Number(carousel.id) === Number(activeCarousel)) ? 'carousel-item active' : 'carousel-item'}>
+                            <div className={(Number(carousel.id) === Number(activeCarousel)) ? 'carousel-item active' : 'carousel-item'} key={carousel.id}>
                                 <img className="w-100" src={carouselImg1} alt="carousel1" />
                                 <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                     <div className="p-3" style={{ maxWidth: '900px' }}>
-                                        <h5 className="text-white text-uppercase mb-3 animated slideInDown">{carousel.h5Heading}</h5>
+                                        <h5 className="text-white mb-3 animated slideInDown">{carousel.h5Heading}</h5>
                                         <h1 className="display-1 text-white mb-md-4 animated zoomIn">{carousel.h1Heading}</h1>
-                                        <Link to={carousel['btn1-link']} className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">{carousel.btn1}</Link>
-                                        <Link to={carousel['btn2-link']}  className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">{carousel.btn2}</Link>
+                                        {carousel.btn1 ? <Link to={carousel['btn1-link']} className="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">{carousel.btn1}</Link> : "" }
+                                        {carousel.btn2 ? <Link to={carousel['btn2-link']}  className="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">{carousel.btn2}</Link> : ""}
                                     </div>
                                 </div>
                             </div>

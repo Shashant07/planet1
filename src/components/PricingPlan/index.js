@@ -26,7 +26,7 @@ const PricingPlan = () => {
                                     <div className="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i className="fa fa-check text-primary pt-1"></i></div>
                                     <div className="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i className="fa fa-times text-danger pt-1"></i></div>
                                     <div className="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i className="fa fa-times text-danger pt-1"></i></div>
-                                    <Link to="" className="btn btn-primary py-2 px-4 mt-4">Order Now</Link>
+                                    <Link to="/pricing" className="btn btn-primary py-2 px-4 mt-4">Know More</Link>
                                 </div>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ const PricingPlan = () => {
                                     <div className="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i className="fa fa-check text-primary pt-1"></i></div>
                                     <div className="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i className="fa fa-check text-primary pt-1"></i></div>
                                     <div className="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i className="fa fa-times text-danger pt-1"></i></div>
-                                    <Link to="" className="btn btn-primary py-2 px-4 mt-4">Order Now</Link>
+                                    <Link to="/pricing" className="btn btn-primary py-2 px-4 mt-4">Know More</Link>
                                 </div>
                             </div>
                         </div>
@@ -64,9 +64,13 @@ const PricingPlan = () => {
                                     <div className="d-flex justify-content-between mb-3"><span>Bootstrap v5</span><i className="fa fa-check text-primary pt-1"></i></div>
                                     <div className="d-flex justify-content-between mb-3"><span>Responsive Layout</span><i className="fa fa-check text-primary pt-1"></i></div>
                                     <div className="d-flex justify-content-between mb-2"><span>Cross-browser Support</span><i className="fa fa-check text-primary pt-1"></i></div>
-                                    <Link to="" className="btn btn-primary py-2 px-4 mt-4">Order Now</Link>
+                                    <Link to="/pricing" className="btn btn-primary py-2 px-4 mt-4">Know More</Link>
                                 </div>
                             </div>
+                        </div>
+
+                        <div className='text-center'>
+                            <Link to="/pricing" className="btn btn-primary py-2 px-4 mt-4">Know More Plans</Link>
                         </div>
                     </div>
                 </div>

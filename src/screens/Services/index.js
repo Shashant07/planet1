@@ -13,7 +13,7 @@ import Blogs from '../../components/Blogs';
 import Vendors from '../../components/Vendors';
 import Footer from '../../components/Footer';
 
-const Blogs = () => {
+const Services = () => {
   return (
     <div className="container-fluid position-relative p-0">
       {/* <TopbarStart /> */}
@@ -34,4 +34,4 @@ const Blogs = () => {
   )
 }
 
-export default Blogs;
+export default Services;
