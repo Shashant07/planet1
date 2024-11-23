@@ -40,7 +40,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
     <React.StrictMode>
-      <BrowserRouter basename='/planet1'>
+      <BrowserRouter basename='/'>
         <App /> 
       </BrowserRouter>
     </React.StrictMode>

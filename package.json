@@ -1,7 +1,7 @@
 {
   "name": "p06",
   "version": "0.1.0",
-  "homepage": "/planet1",
+  "homepage": "/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.3.0",
